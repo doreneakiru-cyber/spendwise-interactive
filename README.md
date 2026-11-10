@@ -1,15 +1,22 @@
-# SpendWise Interactive Budgeting Dashboard
+# SpendWise - Interactive Budget Tracker
 
-## Overview
-SpendWise is an interactive web-based budgeting application designed to help users track their total budget, log multiple expenses, monitor remaining balances, and receive real-time financial health feedback.
+## Live Preview & Repository
+- **Live Netlify Website:** [SpendWise Live App](https://spendwise-by-akiru.netlify.app/)
+- **GitHub Repository:** [SpendWise GitHub Repository](https://github.com/doreneakiru-cyber/spendwise-interactive)
 
-## Features & Implementation
-- **Conditional Statements (`if/else`):** Used to evaluate user input validity, determine spending status, and dynamically change feedback messages when funds are running low or a budget deficit occurs.
-- **Arrays (`[]`):** Stores multiple expense records dynamically as objects (`{ name, amount }`), enabling easy record management without individual variables.
-- **Loops (`for`):** Iterates through the stored expense array to calculate total spending and dynamically build list items.
-- **DOM Manipulation:** Updates summary text elements and appends items directly onto the live webpage rather than using the console.
-- **Event Listeners (`addEventListener`):** Captures user clicks on buttons to trigger budget updates and form submissions seamlessly.
+## Project Overview
+SpendWise is a responsive, interactive personal finance web application designed to help users track income, expenses, and overall budget dynamically in real-time.
 
-## Challenges Faced & Solutions
-- *Challenge:* Clearing previous entries from the UI without duplicating list items during rerendering.
-  *Solution:* Resetting `expenseList.innerHTML = ''` at the beginning of the `updateDashboard()` loop cycle before rebuilding the list elements from the array.
+## Technologies Used
+- **HTML5** for semantic markup
+- **CSS3** (Flexbox & Grid) for modern styling and layout
+- **JavaScript (ES6+)** for DOM manipulation and input validation
+
+## Deployment Process Summary
+1. Developed the static frontend application locally using VS Code.
+2. Initialized Git, committed application code, and pushed the files to a public GitHub repository.
+3. Connected the GitHub repository to Netlify to enable automated continuous deployment.
+4. Configured a custom site name (`spendwise-by-akiru`) on Netlify for seamless access.
+
+## Challenges Encountered & Lessons Learned
+- Ensured all file and asset paths were relative so static hosting on Netlify rendered stylesheets and scripts without broken references.
